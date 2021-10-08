@@ -126,6 +126,7 @@ export default {
         position: relative;
         margin-right: 40px;
         cursor: pointer;
+        z-index: -10;
 
         img {
           margin-left: 12px;
@@ -138,7 +139,7 @@ export default {
           position: absolute;
           top: 25px;
           list-style: none;
-          background-color: #1e2139;
+          background-color: #2b2b2b;
           box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
           li {

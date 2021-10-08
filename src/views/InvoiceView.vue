@@ -78,20 +78,20 @@
         <div class="billing-items">
           <div class="heading flex">
             <p>Item Name</p>
-            <p>QTY</p>
+            <p>Quantity</p>
             <p>Price</p>
             <p>Total</p>
           </div>
           <div v-for="(item, index) in currentInvoice.invoiceItemList" :key="index" class="item flex">
             <p>{{ item.itemName }}</p>
             <p>{{ item.qty }}</p>
-            <p>{{ item.price }}</p>
-            <p>{{ item.total }}</p>
+            <p>${{ item.price }}</p>
+            <p>${{ item.total }}</p>
           </div>
         </div>
         <div class="total flex">
           <p>Amount Due</p>
-          <p>{{ currentInvoice.invoiceTotal }}</p>
+          <p>${{ currentInvoice.invoiceTotal }}</p>
         </div>
       </div>
     </div>
@@ -167,7 +167,7 @@ export default {
 
   .header,
   .invoice-details {
-    background-color: #1e2139;
+    background-color: #414141;
     border-radius: 20px;
   }
 
@@ -180,7 +180,7 @@ export default {
       align-items: center;
 
       span {
-        color: #dfe3fa;
+        color: #eeeeee;
         margin-right: 16px;
       }
     }
@@ -190,7 +190,7 @@ export default {
       justify-content: flex-end;
 
       button {
-        color: #fff;
+        color: #000;
       }
     }
   }
@@ -201,7 +201,7 @@ export default {
 
     .top {
       div {
-        color: #dfe3fa;
+        color: #eeeeee;
         flex: 1;
       }
 
@@ -219,7 +219,7 @@ export default {
         }
 
         span {
-          color: #888eb0;
+          color: #cecece;
         }
       }
 
@@ -231,7 +231,7 @@ export default {
 
     .middle {
       margin-top: 50px;
-      color: #dfe3fa;
+      color: #eeeeee;
       gap: 16px;
 
       h4 {
@@ -283,10 +283,10 @@ export default {
       .billing-items {
         padding: 32px;
         border-radius: 20px 20px 0 0;
-        background-color: #252945;
+        background-color: #2b2b2b;
 
         .heading {
-          color: #dfe3fa;
+          color: #eeeeee;
           font-size: 12px;
           margin-bottom: 32px;
 
@@ -325,7 +325,7 @@ export default {
       .total {
         color: #fff;
         padding: 32px;
-        background-color: rgba(12, 14, 22, 0.7);
+        background-color: #1f1f1f;
         align-items: center;
         border-radius: 0 0 20px 20px;
 

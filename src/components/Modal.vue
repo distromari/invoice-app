@@ -45,7 +45,7 @@ export default {
     border-radius: 20px;
     padding: 48px 32px;
     max-width: 450px;
-    background-color: #252945;
+    background-color: #1f1f1f;
     color: #fff;
     p {
       text-align: center;

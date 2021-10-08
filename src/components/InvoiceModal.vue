@@ -87,9 +87,9 @@
           <table class="item-list">
             <tr class="table-heading flex">
               <th class="item-name">Item Name</th>
-              <th class="qty">Qty</th>
+              <th class="qty">Quantity</th>
               <th class="price">Price</th>
-              <th class="total">Toal</th>
+              <th class="total">ToTal</th>
             </tr>
             <tr class="table-items flex" v-for="(item, index) in invoiceItemList" :key="index">
               <td class="item-name"><input type="text" v-model="item.itemName" /></td>
@@ -329,24 +329,13 @@ export default {
   &::-webkit-scrollbar {
     display: none;
   }
-  /* @media (min-width: 900px) {
-    left: 90px;
-  } */
   .invoice-content {
-    /* position: relative;
-    padding: 56px;
-    max-width: 700px;
-    width: 100%;
-    background-color: #141625;
-    color: #fff;
-    box-shadow: 10px 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.06); */
     max-width: 700px;
     padding: 60px;
     position: relative;
     margin: auto;
-    /* width: 800px; */
     height: 600px;
-  background-color: #141625;
+    background-color: #2b2b2b;
     color: #fff;
     box-shadow: 10px 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     border-radius:5px;
@@ -356,9 +345,6 @@ export default {
     &::-webkit-scrollbar {
       display: none;
     }
-    /* display:inline-block; */
-    /* vertical-align:middle; */
-    /* margin:10px; */
     h1 {
       margin-bottom: 48px;
       color: #fff;
@@ -369,7 +355,7 @@ export default {
       color: #777f98;
     }
     h4 {
-      color: #7c5dfa;
+      color: #d2a21e;
       font-size: 12px;
       margin-bottom: 24px;
     }
@@ -434,10 +420,11 @@ export default {
         }
         .button {
           color: #fff;
-          background-color: #252945;
+          background-color: #d2a21e;
           align-items: center;
           justify-content: center;
-          width: 100%;
+          margin: 0 auto;
+          width: 50%;
           img {
             margin-right: 4px;
           }
@@ -464,7 +451,7 @@ export default {
   input,
   select {
     width: 100%;
-    background-color: #1e2139;
+    background-color: #1f1f1f;
     color: #fff;
     border-radius: 4px;
     padding: 12px 4px;
