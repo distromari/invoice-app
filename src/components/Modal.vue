@@ -34,28 +34,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.modal {
-  z-index: 100;
-  position: fixed;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-  .modal-content {
-    border-radius: 20px;
-    padding: 48px 32px;
-    max-width: 450px;
-    background-color: #1f1f1f;
-    color: #fff;
-    p {
-      text-align: center;
-    }
-    .actions {
-      margin-top: 24px;
-      button {
-        flex: 1;
-      }
-    }
-  }
-}
+@import './assets/scss/modal.scss'
 </style>
